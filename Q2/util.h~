@@ -1,0 +1,7 @@
+#ifndef UTIL_H
+#define UTIL_H
+#include<functional>
+
+typedef std::function<int()> ptr_to_mem;
+int RunTime(ptr_to_mem);
+#endif

@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet"/>
+		<link href="materialize/css/materialize.min.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<script src="materialize/js/materialize.min.js"></script>	
+	</head>
+	<body>
+		<div class="Main">
+			<div class="Header">
+				<img src="menu.png" class="MenuPic" id="IMG"/>
+				<div id="myModal" class="modal">
+
+	  				<!-- Modal content -->
+	  				<div class="modal-content">
+	    					<span class="close">&times;</span>
+	    					<p>Some text in the Modal..</p>
+	  				</div>
+				</div>
+				<h1 class="MenuText">Telegram</h1>
+			</div>
+			<div class="NameBar">
+				<img src="kobe.jpeg" class="Pro1">
+				<h1 style="font-weight:lighter;margin-top:10px;padding-left:15px;font-size:15px;color:#000066;float:left;position:inline-block;">Kobe Bryant</h1>
+			</div>
+			<div class = "TextBox">
+			</div>
+			<div class="MessageBox">
+				<i class="material-icons prefix">insert_emoticon</i>
+				<i class="material-icons prefix">insert_link</i>
+				<form class = "textarea">
+					<textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+				</form>
+			</div>
+			<div class="Bar">
+	  			<div class="row">
+	    				<form class="col s12">
+	      					<div class="row">
+							<div class="input-field col s6">
+		  						<i class="material-icons prefix">search</i>
+		  						<input id="icon_telephone" type="tel" class="validate">
+		  						<label for="icon_telephone">Search</label>
+							</div>
+	      					</div>
+	    				</form>
+	  			</div>
+				<div class="Recent">
+					<h3 class="RecentText">Recent</h3>
+					<img src="bottom.png" class="RecentPic">
+				</div>
+				<div class="People">
+					<img src="JL.jpeg" class="Pro">
+					<h1 style="font-weight:lighter;padding-top:10px;padding-left:35px;font-size:10px;color:#000066;">Jennifer Lopez</h1>
+				</div>
+				<div class="People">
+					<img src="parsa.jpeg" class="Pro">
+					<h1 style="font-weight:lighter;padding-top:10px;padding-left:35px;font-size:10px;color:#000066;">Parsa Piruzfar</h1>
+				</div>
+				<div class="People">
+					<img src="kobe.jpeg" class="Pro">
+					<h1 style="font-weight:lighter;padding-top:10px;padding-left:35px;font-size:10px;color:#000066;">Kobe Bryant</h1>
+				</div>
+				<div class="Contacts">
+					<h3 class="ContactsText">All Contacts</h3>
+					<img src="right.png" class="RecentPic">
+				</div>
+			</div>
+		</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('IMG');
+			img.onclick = function(){
+	  		modal.style.display = "block";
+	  		modalImg.src = this.src;
+	  		captionText.innerHTML = this.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+	 		modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+	  		if (event.target == modal) {
+	    			modal.style.display = "none";
+	 		 }
+			}
+		</script>
+
+</body>
+</html> 
